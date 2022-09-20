@@ -1,0 +1,114 @@
+:root {
+    --very-light-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --cake-red: #ff1f57;
+    --white: #FFFFFF;
+    --black: #000000;
+    --yellow: #ffd900;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+    --title: 32px;
+}
+
+body{
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+nav {
+    display: flex;
+    background-color: var(--cake-red);
+    justify-content: center;
+    padding: 0 24px;
+    border-bottom: 1px solid var(--very-light-pink);
+}
+
+.navbar-items ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+
+.navbar-items ul li a {
+    text-decoration: none;
+    color: var(--very-light-pink);
+    border: none;
+    padding: 8px;
+}
+
+.navbar-items ul li a:hover {
+    text-decoration: none;
+    color: var(--yellow);
+    border: 1px solid var();
+    border-radius: 8px;
+}
+
+.login{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.login-container{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 300px;
+    text-align: center;
+}
+
+.login-container form{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+h1 {
+    font-size: var(--title);
+}
+
+label {
+    font-size: var(--sm);
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+input {
+    background-color: var(--text-input-field);
+    border: none;
+    border-radius: 8px;
+    height: 32px;
+    font-size: var(--md);
+    padding: 6px;
+    margin-bottom: 12px;
+}
+
+button{
+    background-color: var(--cake-red);
+    border-radius: 8px;
+    border: none;
+    color: var(--white);
+    width: 100%;
+    cursor: pointer;
+    font-size: var(--md);
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    height: 50px;
+}
+
+p a {
+    color: var(--cake-red);
+    font-size: var(--sm);
+    text-align: center;
+    text-decoration: none;
+    text-align: left;
+    margin-top: 4px;
+}
+
+p {
+    font-size: var(--sm);
+}
